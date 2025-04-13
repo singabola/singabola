@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Select Tactics | SingaBola</title></head>
+<body>
+  <h1>{{ club }} – Set Your Tactics</h1>
+  <form method="POST">
+    <label>Formation:</label>
+    <select name="formation">
+      <option value="4-4-2" {% if tactics.formation == "4-4-2" %}selected{% endif %}>4-4-2</option>
+      <option value="4-3-3" {% if tactics.formation == "4-3-3" %}selected{% endif %}>4-3-3</option>
+      <option value="3-5-2" {% if tactics.formation == "3-5-2" %}selected{% endif %}>3-5-2</option>
+    </select><br><br>
+
+    <label>Style:</label>
+    <select name="style">
+      <option value="Attacking" {% if tactics.style == "Attacking" %}selected{% endif %}>Attacking</option>
+      <option value="Balanced" {% if tactics.style == "Balanced" %}selected{% endif %}>Balanced</option>
+      <option value="Defensive" {% if tactics.style == "Defensive" %}selected{% endif %}>Defensive</option>
+    </select><br><br>
+
+    <input type="submit" value="Save Tactics">
+  </form>
+  <br>
+  <a href="/">Back to Club</a>
+</body>
+</html>

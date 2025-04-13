@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>League Table | SingaBola</title></head>
+<body>
+  <h1>Singapore Premier League – Table</h1>
+  <table border="1">
+    <tr><th>Club</th><th>Pts</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th></tr>
+    {% for club, stats in table %}
+      <tr>
+        <td>{{ club }}</td>
+        <td>{{ stats.Pts }}</td>
+        <td>{{ stats.P }}</td>
+        <td>{{ stats.W }}</td>
+        <td>{{ stats.D }}</td>
+        <td>{{ stats.L }}</td>
+        <td>{{ stats.GF }}</td>
+        <td>{{ stats.GA }}</td>
+        <td>{{ stats.GF - stats.GA }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <br>
+  <a href="/">Back to Club</a>
+</body>
+</html>

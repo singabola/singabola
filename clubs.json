@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Albirex Phoenix",
+    "stadium": "Jalan Besar Stadium",
+    "capacity": 6000,
+    "colors": [
+      "white",
+      "orange"
+    ]
+  },
+  {
+    "name": "Balestier Knights",
+    "stadium": "Toa Payoh Stadium",
+    "capacity": 3900,
+    "colors": [
+      "red",
+      "black"
+    ]
+  },
+  {
+    "name": "Brunei Royals",
+    "stadium": "Hassanal Bolkiah Stadium",
+    "capacity": 28000,
+    "colors": [
+      "yellow",
+      "blue"
+    ]
+  },
+  {
+    "name": "Geylang Griffins",
+    "stadium": "Our Tampines Hub",
+    "capacity": 5400,
+    "colors": [
+      "green",
+      "white"
+    ]
+  },
+  {
+    "name": "Hougang Hawks",
+    "stadium": "Hougang Stadium",
+    "capacity": 3500,
+    "colors": [
+      "orange",
+      "black"
+    ]
+  },
+  {
+    "name": "Lion City Kings",
+    "stadium": "Bishan Stadium",
+    "capacity": 6000,
+    "colors": [
+      "blue",
+      "white"
+    ]
+  },
+  {
+    "name": "Tampines Blaze",
+    "stadium": "Tampines Stadium",
+    "capacity": 5400,
+    "colors": [
+      "yellow",
+      "black"
+    ]
+  },
+  {
+    "name": "Tanjong Titans",
+    "stadium": "Jurong East Stadium",
+    "capacity": 2700,
+    "colors": [
+      "white",
+      "red"
+    ]
+  },
+  {
+    "name": "Young Serpents",
+    "stadium": "Jalan Besar Stadium",
+    "capacity": 6000,
+    "colors": [
+      "blue",
+      "grey"
+    ]
+  }
+]

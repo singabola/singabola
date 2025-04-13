@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Matchday Commentary | SingaBola</title></head>
+<body>
+  <h1>{{ club }} – Match Commentary</h1>
+  <div>
+    {% for line in commentary %}
+      <p>{{ line }}</p>
+    {% endfor %}
+  </div>
+  <a href="/">Back to Club</a>
+</body>
+</html>
