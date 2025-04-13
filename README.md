@@ -1,23 +1,28 @@
 # ⚽ SingaBola
 
-**SingaBola** is a browser-based football manager game based on the Singapore Premier League.  
+**SingaBola** is a free-to-play, browser-based football manager game based on the Singapore Premier League.  
 Created and owned by **Elias Lye © 2025**. All rights reserved.
 
 ## 🚀 Features
-- Youth player training and tracking
-- Earn credits from real-world football engagement
-- Simulated weekly match results
-- Secure login and save/load functionality
 
-## 🛠 Quickstart
+- Manage youth players and train them
+- Earn in-game credits through real-world football activity
+- Weekly match simulation with goal/injury tracking
+- Persistent game saves for registered users
+- Secure login system
+- Save/load game progress
+
+## 🛠 Setup & Deployment
+
+This app is built using Python + Flask and is ready for hosting on [Render](https://render.com).
+
+### Requirements
+
+- Python 3.8+
+- `flask`, `werkzeug`
+
+### Quickstart
+
 ```bash
 pip install -r requirements.txt
 python main.py
-```
-
-## 🌐 Live Deployment (Render)
-Push this repo to GitHub, then deploy using Render's free tier.
-
-## 📄 License
-This software is proprietary. Do not copy, reproduce, or redistribute without written permission.  
-**© Elias Lye 2025**
