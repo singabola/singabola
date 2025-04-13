@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><title>SingaBola Dashboard</title></head>
+<body>
+  <h1>Welcome to SingaBola</h1>
+  <p><a href="/logout">Logout</a></p>
+  <h2>Your Youth Roster</h2>
+  {% for player in roster %}
+    <div>
+      <strong>{{ player.name }}</strong> ({{ player.club }})<br>
+      Stats: {{ player.stats }}<br>
+      Credits: {{ player.credits }}<br>
+      Matches: {{ player.matches_played }} | Goals: {{ player.goals_scored }}<br>
+      Injured: {{ player.injured }} {% if player.injured %}({{ player.injury_weeks }} weeks){% endif %}
+      <form method="POST" action="/train">
+        <select name="area">
+          <option value="speed">Speed</option>
+          <option value="passing">Passing</option>
+          <option value="shooting">Shooting</option>
+          <option value="stamina">Stamina</option>
+        </select>
+        <input type="hidden" name="name" value="{{ player.name }}">
+        <input type="number" name="amount" min="1" max="10">
+        <input type="submit" value="Apply Training">
+      </form>
+    </div>
+  {% endfor %}
+
+  <h2>Actions</h2>
+  <form method="POST" action="/earn">
+    <select name="name">
+      {% for player in roster %}
+        <option value="{{ player.name }}">{{ player.name }}</option>
+      {% endfor %}
+    </select>
+    <select name="action">
+      <option value="credits_school">Post School Match (+10)</option>
+      <option value="credits_women">Post Women's Match (+15)</option>
+      <option value="credits_interview">Player Interview (+20)</option>
+    </select>
+    <input type="submit" value="Claim Credits">
+  </form>
+
+  <form action="/simulate"><input type="submit" value="Simulate Week"></form>
+  <footer><p>SingaBola © 2025. Created and owned by Elias Lye. All rights reserved.</p></footer>
+</body>
+</html>
