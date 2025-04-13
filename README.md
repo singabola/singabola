@@ -1,16 +1,26 @@
-## Hi there 👋
+# ⚽ SingaBola
 
-<!--
-**singabola/singabola** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**SingaBola** is a free-to-play, browser-based football manager game based on the Singapore Premier League.  
+Created and owned by **Elias Lye © 2025**. All rights reserved.
 
-Here are some ideas to get you started:
+## 🚀 Features
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Manage youth players and train them
+- Earn in-game credits through real-world football activity
+- Weekly match simulation with goal/injury tracking
+- Persistent game saves for registered users
+
+## 🛠 Setup & Deployment
+
+This app is built using Python + Flask and is ready for hosting on [Render](https://render.com).
+
+### Requirements
+
+- Python 3.8+
+- `flask`, `werkzeug`
+
+### Quickstart
+
+```bash
+pip install -r requirements.txt
+python main.py
